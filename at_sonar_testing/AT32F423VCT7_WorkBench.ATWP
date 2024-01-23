@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <MCUInfo>
+        <MCUSerials>AT32F423</MCUSerials>
+        <MCUName>AT32F423VCT7</MCUName>
+        <MCUPackage>LQFP100</MCUPackage>
+    </MCUInfo>
+    <CRM>
+        <Mode>
+            <ModeSub name="HEXT" value="HEXT-External-Oscillator"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="HEXT" value="HEXT_CRYSTAL"/>
+        </Parameters>
+    </CRM>
+    <DEBUG>
+        <Mode>
+            <ModeSub name="Debug interface" value="SWD"/>
+        </Mode>
+    </DEBUG>
+    <EXINT>
+        <Mode>
+            <ModeSub name="EXINT10" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="TriggerPolarity_10" value="EXINT_TRIGGER_BOTH_EDGE"/>
+        </Parameters>
+    </EXINT>
+    <TMR1>
+        <Mode>
+            <ModeSub name="Channel2 mode" value="Output_CH2"/>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="1499"/>
+            <ParametersSub name="Period" value="10000"/>
+            <ParametersSub name="OCMode_2" value="TMR_OUTPUT_CONTROL_PWM_MODE_A"/>
+            <ParametersSub name="ChannelData_2" value="10"/>
+        </Parameters>
+    </TMR1>
+    <TMR2>
+        <Mode>
+            <ModeSub name="Channel1 mode" value="Output_without_pin"/>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="149"/>
+        </Parameters>
+    </TMR2>
+    <USART2>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+    </USART2>
+    <NVIC>
+        <SysTick_Handler>0;0;0</SysTick_Handler>
+        <FLASH_IRQHandler>0;0;0</FLASH_IRQHandler>
+        <CRM_IRQHandler>0;0;0</CRM_IRQHandler>
+        <TMR1_BRK_TMR9_IRQHandler>0;0;0</TMR1_BRK_TMR9_IRQHandler>
+        <TMR1_OVF_TMR10_IRQHandler>0;0;0</TMR1_OVF_TMR10_IRQHandler>
+        <TMR1_TRG_HALL_TMR11_IRQHandler>0;0;0</TMR1_TRG_HALL_TMR11_IRQHandler>
+        <TMR1_CH_IRQHandler>0;0;0</TMR1_CH_IRQHandler>
+        <TMR2_GLOBAL_IRQHandler>0;0;0</TMR2_GLOBAL_IRQHandler>
+        <USART2_IRQHandler>0;0;0</USART2_IRQHandler>
+        <EXINT15_10_IRQHandler>1;0;0</EXINT15_10_IRQHandler>
+        <FPU_IRQHandler>0;0;0</FPU_IRQHandler>
+    </NVIC>
+    <ClockConfiguration>
+        <rtcsel>0</rtcsel>
+        <rtcdiv>2</rtcdiv>
+        <hext>8.000000</hext>
+        <sclkhextdiv>1</sclkhextdiv>
+        <sclkhickdiv>1</sclkhickdiv>
+        <pllrcs>1</pllrcs>
+        <pllms>1</pllms>
+        <pllns>75</pllns>
+        <pllfr>2</pllfr>
+        <sclkselect>1</sclkselect>
+        <ahbdiv>1</ahbdiv>
+        <apb1div>2</apb1div>
+        <apb2div>1</apb2div>
+        <usbdiv>6.0</usbdiv>
+        <hicktousb>1</hicktousb>
+        <hicktosclk>0</hicktosclk>
+        <clkout>5</clkout>
+        <clkoutdiv1>1</clkoutdiv1>
+        <clkoutdiv2>1</clkoutdiv2>
+        <clkoutpinselect>0</clkoutpinselect>
+        <usart1clocksel>0</usart1clocksel>
+        <usart2clocksel>0</usart2clocksel>
+        <usart3clocksel>0</usart3clocksel>
+        <i2c1clocksel>0</i2c1clocksel>
+        <adcclocksel>0</adcclocksel>
+    </ClockConfiguration>
+    <PINInfo>
+        <PinSub pinname="PF0" signalname="CRM_HEXT_IN" signaltype="2"/>
+        <PinSub pinname="PF1" signalname="CRM_HEXT_OUT" signaltype="2"/>
+        <PinSub pinname="PA0" signalname="USART2_RX" signaltype="2"/>
+        <PinSub pinname="PA2" signalname="USART2_TX" signaltype="2"/>
+        <PinSub pinname="PA9" signalname="TMR1_CH2" signaltype="3"/>
+        <PinSub pinname="PA10" signalname="EXINT10" signaltype="3"/>
+        <PinSub pinname="PA13" signalname="DEBUG_JTMS_SWDIO" signaltype="2"/>
+        <PinSub pinname="PA14" signalname="DEBUG_JTCK_SWCLK" signaltype="2"/>
+    </PINInfo>
+    <ProjectInfomation>
+        <ProjectName>AT32F423VCT7_WorkBench</ProjectName>
+        <ProjectLocation>C:/Users/ashirov/Downloads/at_sonar_testing</ProjectLocation>
+        <ToolchainIDE>AT32_IDE</ToolchainIDE>
+        <KeepUserCode>true</KeepUserCode>
+        <MinHeapSize>0x200</MinHeapSize>
+        <MinStackSize>0x400</MinStackSize>
+        <UseFirmware>true</UseFirmware>
+        <UseFirmwareZip>true</UseFirmwareZip>
+        <FirmwarePath>C:/Users/ashirov/Downloads/AT32F423_Firmware_Library_EN_V2.0.2(1).zip</FirmwarePath>
+        <FirmwareFolderPath></FirmwareFolderPath>
+    </ProjectInfomation>
+</Root>
